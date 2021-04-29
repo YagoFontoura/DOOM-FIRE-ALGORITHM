@@ -7,8 +7,7 @@ export default function updateFireIntensityPerPixel(currentPixelIndex, fireWidth
 
     const decay = Math.floor(Math.random() * 3)
     const belowPixelFireIntensity = firePixelsArray[belowPixelIndex]
-    const newFireIntensity =
-        belowPixelFireIntensity - decay >= 0 ? belowPixelFireIntensity - decay : 0
+    const newFireIntensity = belowPixelFireIntensity - decay >= 0 ? belowPixelFireIntensity - decay : 0
 
     firePixelsArray[currentPixelIndex - decay] = newFireIntensity
 
